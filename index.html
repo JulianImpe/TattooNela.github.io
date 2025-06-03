@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tattoonela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/sunny.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Tattoonela</h1>
+        </a>
+        <div class="dark-toggle-container">
+            <button id="dark-toggle-btn" aria-label="Cambiar modo">
+                <span class="icon-sun" aria-hidden="true">
+                    <!-- Ícono de sol SVG -->
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5" fill="#FFD600" />
+                        <g stroke="#FFD600" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="4" />
+                            <line x1="12" y1="20" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="4" y2="12" />
+                            <line x1="20" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </span>
+                <span class="icon-moon" aria-hidden="true">
+                    <!-- Ícono de luna SVG -->
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="#FFD600" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+
+        <!-- Menú escritorio -->
+        <nav id="main-nav-desktop" class="main-nav-desktop">
+            <a class="li_links" href="#about">Sobre mí</a>
+            <a class="li_links" href="#desings">Diseños</a>
+            <a class="li_links" href="#reseñas">Reseñas</a>
+            <a class="li_links" href="#find-us">Ubicación</a>
+            <a href="https://www.instagram.com/tattoonela_/" target="_blank">
+                <i class="fa-brands fa-instagram" id="instagram-logo"></i>
+            </a>
+            <a href="https://wa.me/5491144278014" target="_blank">
+                <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+            </a>
+        </nav>
+
+        <!-- Menú mobile hamburguesa -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="main-nav-mobile" class="main-nav-mobile">
+            <a class="li_links" href="#about">Sobre mí</a>
+            <a class="li_links" href="#desings">Diseños</a>
+            <a class="li_links" href="#reseñas">Reseñas</a>
+            <a class="li_links" href="#find-us">Ubicación</a>
+            <a href="https://www.instagram.com/tattoonela_/" target="_blank">
+                <i class="fa-brands fa-instagram" id="instagram-logo"></i>
+            </a>
+            <a href="https://wa.me/5491144278014" target="_blank">
+                <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="hero">
+    </div>
+    <div class="texto-hero">
+        <a href="https://wa.me/5491144278014" target="_blank"><button> Reservar turno</button></a>
+    </div>
+    <section id="styles" class="fade-in">
+        <h2 id="mis-estilos-titulo">Mis estilos</h2>
+        <div class="tattoo-styles">
+            <div class="tattoo-style">
+                <div class="video-container">
+                    <video src="/images/PuntillismoDeArrastreVideo.mp4" alt="Realismo" autoplay loop muted></video>
+                    <a href="https://www.instagram.com/reel/CwVZ2qcgGd_/" class="video-overlay" target="_blank">
+                        Ver en Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <h3>Realismo</h3>
+                <p>Diseños que retraten a tus seres queridos en la piel.</p>
+            </div>
+            <div class="tattoo-style">
+                <div class="video-container">
+                    <video src="/images/Videos/cover.mp4" alt="Cover" autoplay loop muted></i></video>
+                    <a href="https://www.instagram.com/reel/CyEhNVOxSgj/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        class="video-overlay" target="_blank">Ver en Instagram<i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <h3>Cover</h3>
+                <p>Tatuajes que transforman u ocultan trabajos antiguos con nuevo arte.</p>
+            </div>
+            <div class="tattoo-style">
+                <div class="video-container">
+                    <video src="/images/Videos/Medusa.mp4" alt="Geometrico" autoplay loop muted></video>
+                    <a href="https://www.instagram.com/reel/DJnjMaGMFdE/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        class="video-overlay" target="_blank">Ver en Instagram<i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <h3>Personalizado</h3>
+                <p>Un tatuaje diseñado exclusivamente para tu cuerpo.</p>
+            </div>
+            <div class="tattoo-style">
+                <div class="video-container">
+                    <video src="/images/Videos/dragon ball.mp4" alt="Puntillismo de arrastre" autoplay loop
+                        muted></video>
+                    <a href="https://www.instagram.com/reel/DJfWxYaJobM/" class="video-overlay" target="_blank"
+                        rel="noopener noreferrer">Ver en
+                        Instagram<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <h3>Puntillismo De Arrastre</h3>
+                <p>Sombras creadas con puntos que simulan movimiento y profundidad.</p>
+            </div>
+        </div>
+    </section>
+    <section id="desings" class="my-desings fade-in">
+        <h2>Mis diseños</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/Pierna-Tigre.jpg" alt="cartoons-tattoo" loading="lazy">
+
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/brazo flor.jpg" alt="brazo con flor tatuada" loading="lazy">
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noreferrer noopener">Ver en instagram</a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/ojo-señor.jpg" alt="ojo-señor" loading="lazy">
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/ojos y espadas.jpg" alt="ojos y espalda" loading="lazy">
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/espalda.jpg" alt="espalda-completa" loading="lazy">
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"> Ver en instagram</a>
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/Diseños/brazo-araño.jpg" alt="brazo-tattoo" loading="lazy">
+
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                    </button>
+                </div>
+            </div>
+            <!-- Paginación y flechas opcionales -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- Sección Fiverr -->
+    <section id="mi-diseño-fiverr" class="fade-in">
+        <h2>Conseguí tu diseño en</h2>
+        <div class="video-fiverr">
+            <img src="/images/Fiverr_Logo.png" alt="Fiverr logo" class="fiverr-logo">
+            <div id="fiverr-video-img-container">
+                <video src="/images/Videos/Fiver_video.mp4" autoplay loop muted playsinline></video>
+                <img src="/images/fiver-img.referencia.png" alt="screenshot-fiverr" class="fiverr-screenshot">
+            </div>
+            <button class="btn-fiverr">Visitar Fiverr
+                <a href="https://www.fiverr.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <section class="frase fade-in">
+        <h3>"Una cicatriz controlada, un proceso natural de sanación" 🌿</h3>
+    </section>
+
+    <section id="seccion-youtube" class="fade-in">
+        <h2>Mi canal de Youtube</h2>
+        <div class="video-youtube">
+            <i class="fa-brands fa-youtube" id="logo-yt-main"></i>
+            <div id="youtube-video-img-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/k96-VlqcObM"
+                    title="Diario Creativo #2 - De un tatuaje viejo a una espalda completa 🖤🔥" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <button type="submit" class="ver-en-instagram">
+                <a href="https://www.youtube.com/@tattoonela" class="ver-en-instagram"
+                    target="_blank" rel="noopener noreferrer">Visitar Youtube <i class="fa-brands fa-youtube"id="logo-yt-button" ></i></a>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about fade-in">
+        <h2>Un poco sobre mí </h2>
+        <a href="https://www.instagram.com/tattoonela_/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/marian ing.jpeg" alt="marian-img" class="about-image">
+        </a>
+
+        <h4 class="fade-in"><img src="/images/Gif/hola.gif" alt="little-hand-pointer" class="gif-sobre-mi"> Hola, soy
+            Marianela, artista de tatuajes y me encanta ayudar a las
+            personas a <strong>expresar su individualidad</strong> a través de mis diseños.</h4>
+
+        <h4 class="fade-in"> <img src="/images/Gif/amor.gif" alt="little-hand-pointer" class="gif-sobre-mi">Mi
+            <strong>pasión</strong> por el arte me llevó a convertirme
+            en tatuadora, y cada día me esfuerzo por mejorar mis habilidades y ofrecer lo <strong>mejor</strong> a mis
+            clientes.
+        </h4>
+
+        <h4 class="fade-in"><img src="/images/Gif/objetivo.gif" alt="little-hand-pointer" class="gif-sobre-mi"> Me gusta
+            trabajar con diferentes estilos, desde el puntillismo hasta el realismo, y siempre
+            estoy abierta a
+            <strong>nuevas ideas</strong> y <strong>desafíos</strong>. Si estás buscando un tatuaje único y
+            personalizado, no dudes en contactarme.
+        </h4>
+        </h4>
+    </section>
+    <section id="find-us" class="fade-in">
+        <div class="fade-left">
+            <h2 class="centered-title">Mi local</h2>
+            <div class="map-fade-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.406685880873!2d-58.572125500000006!3d-34.669684000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc70c4fd81af1%3A0xf117cdd0a81109e!2sTattoonela%20Studio!5e0!3m2!1ses-419!2sar!4v1748142680069!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Carrusel solo para mobile -->
+    <section id="reseñas" class="fade-in">
+        <h2>Reseñas</h2>
+        <div class="reseñas-swiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/Agus.jpeg" alt="reseña-1"></div>
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/Gonza.jpeg" alt="reseña-2">
+                    </div>
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/Lucas.jpeg" alt="reseña-3">
+                    </div>
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/mabel.jpeg" alt="reseña-4">
+                    </div>
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/sofi.jpeg" alt="reseña-5"></div>
+                    <div class="swiper-slide" class="fade-in"><img src="/images/Reseñas/eze.jpeg" alt="reseña-6">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swipe-hint">
+                <img src="/images/Gif/comprar.gif" alt="Desliza para ver más" />
+            </div>
+        </div>
+    </section>
+<section id="cupon">
+        <h2>Felicidades, llegaste al final de la web. Por eso te regalamos un cupón de descuento.</h2>
+<form id="cupon-form" class="cupon-form" autocomplete="off">
+    <h3>Obtené 10% de descuento en tu próximo tatuaje.</h3>
+    <h4>Solo tenes seguirme en instagram, enviar una screen del follow y reclamar el cupón!</h4>
+    <a class="btn-contacto-ig" href="https://www.instagram.com/tattoonela_/"
+        onclick="setTimeout(()=>{ window.location='https://www.instagram.com/direct/new/?username=tattoonela_'; }, 100);"
+        target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> Ir a Instagram
+    </a>
+    <input type="text" placeholder="Tu nombre" name="nombre" id="nombre" required maxlength="40">
+    <button type="submit" class="btn-cupon"  id="btn-enviar-foto">Ir a Whatsapp y Enviar foto</button>
+    <button type="button" class="btn-cupon" id="btn-reclamar-codigo" style="display:none;">Reclamar código</button>
+<div id="codigo-cupon" style="display:none; margin-top:1rem;">
+    <strong>CÓDIGO: TATTOO10</strong>
+</div>
+</form>
+
+</section>
+
+
+    <section id="contact" class="contact fade-in">
+        <h2>Tatuate conmigo ✨</h2>
+        <p>Contactame hacé tu reserva 🙌🏻</p>
+        <a class="btn-contacto-ig" href="instagram://direct?username=tattoonela_"
+            onclick="setTimeout(()=>{ window.location='https://www.instagram.com/direct/new/?username=tattoonela_'; }, 100);"
+            target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a class="btn-contacto-wpp" href="https://wa.me/5491144278014"
+            onclick="setTimeout(()=>{ window.location='https://wa.me/5491144278014'; }, 100);" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> Whatsapp
+        </a>
+        <a class="btn-contacto-gmail" href="mailto:tattoonela@gmail.com"
+            onclick="setTimeout(()=>{ window.location='mailto:tattoonela@gmail.com'; }, 100);" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i> Mail
+        </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>© 2025s Tattoonela. Todos los derechos reservados.</p>
+        <p>Web Diseñada por <a href="https://www.instagram.com/juli_styles.css/" target="_blank"
+                rel="noopener noreferrer">Imperiale Julián</a></p>
+        <a href="https://www.flaticon.es/iconos-animados-gratis/comprar" title="comprar iconos animados">Comprar iconos
+            animados creados por Freepik - Flaticon</a>
+    </div>
+</footer>
+
+</html>
