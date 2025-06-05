@@ -9,7 +9,7 @@
     width: 100%;
     height: 60vh;
     /* o el alto que prefieras */
-    background: url('/images/imagen\ hero\ 4\ diseños.jpeg') no-repeat center top/cover;
+    background: url('images/imagen\ hero\ 4\ diseños.jpeg') no-repeat center top/cover;
     animation: hero-pan 8s ease-in-out infinite alternate;
 }
 
