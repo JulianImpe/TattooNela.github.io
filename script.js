@@ -9,7 +9,7 @@ const swiperDesigns = new Swiper('.my-desings .swiper', {
     slidesPerView: 1, // Por defecto, 1 slide en mobile
     spaceBetween: 20,
     loop: true,
-    effect: 'coverflow', // Cambia a 'cube' si prefieres el efecto cubo
+    effect: 'coverflow',
     coverflowEffect: {
         rotate: 30,
         stretch: 0,
@@ -42,8 +42,42 @@ const swiperReseñas = new Swiper('.reseñas-swiper .swiper', {
     loop: true,
     breakpoints: {
         768: {
-            slidesPerView: 2 // 3 reseñas visibles en desktop
+            slidesPerView: 3 // 3 reseñas visibles en desktop
         }
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 2 //
+        }
+    }
+});
+
+// Swiper para estilos SOLO en mobile
+const swiperEstilos = new Swiper('.mis-estilos .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.mis-estilos .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    breakpoints: {
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 2
+        },
+        768:{
+            slidesPerView: 3
+        },
+        1024:{
+            slidesPerView: 4
+        }
+
     }
 });
 
@@ -120,6 +154,20 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 fadeEls.forEach(el => observer.observe(el));
+
+document.getElementById('reservarTurno').addEventListener('click', function (e) {
+    e.preventDefault();
+    const numeroWpp = '5491144278014';
+    const mensaje = `¡Hola! Quiero tatuarme ¿Me darías más información?`;
+    window.open(`https://wa.me/${numeroWpp}?text=${encodeURIComponent(mensaje)}`, '_blank');
+})
+
+document.getElementById('reservarTurnoHeader').addEventListener('click', function (e) {
+    e.preventDefault();
+    const numeroWpp2 = '5491144278014';
+    const mensaje2 = `¡Hola! Quiero tatuarme ¿Me darías más información?`;
+    window.open(`https://wa.me/${numeroWpp2}?text=${encodeURIComponent(mensaje2)}`, '_blank');
+})
 
 document.getElementById('cupon-form').addEventListener('submit', function (e) {
     e.preventDefault();

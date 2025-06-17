@@ -78,7 +78,7 @@ body.dark .hamburger {
 
 body.dark h1 {
     font-family: 'Cinzel', serif;
-    background: linear-gradient(90deg, #9b5c61, #b34851, #ab2626);
+    background: linear-gradient(90deg, #ad6d72, #c55c65, #b63737);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
@@ -92,7 +92,7 @@ body.dark a {
 
 body.dark .texto-hero button {
     color: #ffffff;
-    box-shadow: white 0px 0px 10px;
+    box-shadow: white 0px 0px 8px;
 }
 
 body.dark .texto-hero {
@@ -520,16 +520,23 @@ body.dark .gif-sobre-mi {
 }
 
 #seccion-youtube #logo-yt-main {
-    color: #FF0000;
     vertical-align: middle;
-    background-image: url('/images/fiverr-logo.png');
-    font-size: 5rem;
+    width: 50%;
+    max-width: 300px;
+    height: 10%;
     height: auto;
-    border-radius: 10px;
 }
 
-#seccion-youtube #logo-yt-button {
-    vertical-align: middle;
+.video-youtube #link-youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+}
+#logo-yt-button{
+        vertical-align: middle;
     font-size: 2rem;
 }
 
@@ -913,6 +920,7 @@ body .dark .about-image {
     transition: transform 0.2s, box-shadow 0.2s;
     text-decoration: none;
     letter-spacing: 1px;
+    border-radius: 10px;
 }
 
 .btn-contacto-wpp {
@@ -1029,8 +1037,8 @@ body .dark .about-image {
 }
 
 .swiper-pagination-bullet {
-    background-color: #46191d !important;
-    background: #46191d !important;
+    background-color: #b1333e !important;
+    background: #b8525b !important;
     opacity: 1;
 }
 
@@ -1365,6 +1373,10 @@ button:hover {
 }
 /* Responsive: para tablets */
 @media (max-width: 1024px) {
+        .hero {
+        height: 40vh;
+        min-height: 220px;
+    }
     
         #styles {
         opacity: 1 !important;
@@ -1453,6 +1465,11 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
+        .hero {
+        height: 20vh;
+        min-height: 220px;
+    }
         #styles {
         opacity: 1 !important;
     }
@@ -1473,11 +1490,12 @@ button:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
     }
+    /*
     .tattoo-styles {
         min-width: 20px;
         grid-template-columns: 1fr;
     }
-
+*/
     .video-fiverr video {
         max-width: 90%;
         height: auto;
@@ -1537,7 +1555,6 @@ button:hover {
         z-index: 1000;
         gap: 1rem;
     }
-
     .main-nav-mobile.show {
         display: flex;
     }
@@ -1622,6 +1639,11 @@ body:not(.dark) .icon-moon {
 }
 
 @media (min-width:200px) and (max-width: 359px) {
+    .hero {
+        height: 20vh;
+        min-height: 220px;
+    }
+
         #styles {
         opacity: 1 !important;
     }
@@ -1639,12 +1661,12 @@ body:not(.dark) .icon-moon {
         max-width: 100%;
         margin: 0 auto;
     }
-
+/*
     .tattoo-styles {
         min-width: 20px;
         grid-template-columns: 1fr;
     }
-
+*/
     .video-fiverr video {
         max-width: 100%;
         height: auto;
@@ -1704,6 +1726,10 @@ body:not(.dark) .icon-moon {
 
     .hero h2 {
         font-size: 1.2rem;
+    }
+    .hero {
+        height: 40vh;
+        min-height: 220px;
     }
 
     header a {
@@ -1997,11 +2023,16 @@ iframe {
 }
 
 @media (max-width: 379px) {
+    /*
     .tattoo-styles {
         grid-template-columns: 1fr;
-        /* Fuerza una sola columna */
+        Fuerza una sola columna 
     }
-
+*/
+    .hero {
+        height: 20vh;
+        min-height: 220px;
+    }
     .tattoo-style {
         min-width: 100%;
         /* Evita que se encojan */
