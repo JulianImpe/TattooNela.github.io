@@ -525,6 +525,7 @@ body.dark .gif-sobre-mi {
     max-width: 300px;
     height: 10%;
     height: auto;
+    box-shadow: none !important;
 }
 
 .video-youtube #link-youtube{
@@ -602,7 +603,6 @@ body.dark #seccion-youtube::before {
 }
 
 body.dark #link-youtube {
-    background-color: #fff;
     border-radius: 20%;
 
 
