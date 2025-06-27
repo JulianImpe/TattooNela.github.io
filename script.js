@@ -106,39 +106,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Mostrar el cupón solo si no se mostró antes
-document.querySelectorAll('.texto-zoom, .imagen-zoom').forEach(element => {
-    let pressTimer;
-    const clon = element.cloneNode(true); // Clonamos el elemento
 
-    // Configura el clon para el popup
-    clon.classList.add('elemento-zoom');
-    document.body.appendChild(clon);
-
-    // Fondo oscuro
-    const fondo = document.createElement('div');
-    fondo.classList.add('fondo-zoom');
-    document.body.appendChild(fondo);
-
-    // Al mantener presionado
-    element.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-        pressTimer = setTimeout(() => {
-            clon.classList.add('activo');
-            fondo.classList.add('activo');
-        }, 500);
-    });
-
-    // Al levantar el dedo
-    const resetZoom = () => {
-        clon.classList.remove('activo');
-        fondo.classList.remove('activo');
-    };
-
-    element.addEventListener('touchend', resetZoom);
-    element.addEventListener('touchmove', resetZoom);
-    fondo.addEventListener('click', resetZoom); // Cerrar al tocar fuera
-});
 // Animación fade-in al hacer scroll
 const fadeEls = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {

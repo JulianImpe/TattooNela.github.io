@@ -374,44 +374,8 @@ section {
     pointer-events: auto;
 }
 
-#fiverr-iconito {
-    width: 5rem;
-    height: auto;
-    background-image: url('/images/fiverr-icon.png');
-    background-size: cover;
-    margin-left: 10px;
-}
 
-#mi-diseño-fiverr {
-    margin-bottom: 4rem;
-}
 
-#mi-diseño-fiverr::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 50%;
-    height: 65%;
-    background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='2' fill='%23000'/></svg>");
-    background-repeat: repeat;
-    z-index: 0;
-    pointer-events: none;
-}
-
-#mi-diseño-fiverr>* {
-    position: relative;
-    z-index: 1;
-}
-
-.video-fiverr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 2rem;
-    gap: 1rem;
-}
 
 .little-hand-pointer {
     mix-blend-mode: multiply;
@@ -443,81 +407,9 @@ body.dark .gif-sobre-mi {
     box-shadow: 0 4px 10px rgb(75, 1, 1);
 }
 
-.btn-fiverr {
-    font-family: 'Cinzel', serif;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-#fiverr-video-img-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 1rem;
-    gap: 2rem;
-}
-
-.fiverr-screenshot {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.video-fiverr .fiverr-logo {
-    vertical-align: middle;
-    background-image: url('/images/fiverr-logo.png');
-    width: 50%;
-    max-width: 300px;
-    height: 10%;
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.video-fiverr .fiverr-logo:hover {
-    border-radius: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-    transition: transform 1s;
-}
 
 
-.video-fiverr .fiverr-logo {
-    border-radius: 100%;
-    animation: video-fiverr-glow 2s infinite alternate;
-}
 
-.video-fiverr video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 50%;
-    border-radius: 10px;
-}
-
-.video-fiverr p {
-    font-size: 1.2rem;
-    color: #000;
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    box-shadow: 0 4px 10px rgba(1.2, 1.2, 1.2, 1.2);
-    border-radius: 15px;
-}
-
-.video-fiverr a {
-    display: flex;
-    align-items: center;
-    max-width: 300px;
-    justify-content: center;
-    text-decoration: none;
-}
 
 #seccion-youtube #logo-yt-main {
     vertical-align: middle;
@@ -799,9 +691,6 @@ body.dark #find-us::before {
     background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='2' fill='%23fff'/></svg>");
 }
 
-body.dark #mi-diseño-fiverr::before {
-    background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='2' fill='%23fff'/></svg>");
-}
 
 body.dark .contact::before {
     background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='2' fill='%23fff'/></svg>");
@@ -1381,37 +1270,10 @@ button:hover {
         #styles {
         opacity: 1 !important;
     }
-    .video-fiverr .fiverr-logo {
-        width: 35%;
-    }
-
-    .fiverr-screenshot {
-        width: 40%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-    }
-
     .cupon-form {
                 padding: 1rem;
         max-width: 100%;
         margin: 0 auto;
-    }
-
-    .video-fiverr video {
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-    #fiverr-video-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 1rem;
     }
 
     .main-nav-mobile {
@@ -1483,33 +1345,14 @@ button:hover {
         margin: 0 auto;
     }
 
-    .fiverr-screenshot {
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-    }
     /*
     .tattoo-styles {
         min-width: 20px;
         grid-template-columns: 1fr;
     }
 */
-    .video-fiverr video {
-        max-width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
 
-    #fiverr-video-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        gap: 1rem;
-    }
+
 
     .main-nav-mobile {
         display: flex;
@@ -1667,47 +1510,7 @@ body:not(.dark) .icon-moon {
         grid-template-columns: 1fr;
     }
 */
-    .video-fiverr video {
-        max-width: 100%;
-        height: auto;
-    }
 
-    .video-fiverr .fiverr-logo {
-        background-image: url(/images/fiverr-logo.png);
-        width: 40%;
-        max-width: 300px;
-        height: 10%;
-        height: auto;
-    }
-
-    .video-fiverr video {
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .fiverr-screenshot {
-        width: 50%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-    }
-
-    #fiverr-video-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 1rem;
-    }
-
-    #fiverr-video-img-container video {
-        max-width: 100%;
-        margin: 0 auto;
-    }
 
     .tattoo-style video {
         width: 100%;
