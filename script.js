@@ -278,11 +278,11 @@ function updateLanguageButtons(lang) {
         const text = button.querySelector('.lang-text');
         
         if (lang === 'es') {
-            flag.textContent = '🇪🇸';
-            text.textContent = 'ES';
+            flag.textContent = 'ESP ➤';
+            text.textContent = 'ING';
         } else {
-            flag.textContent = '🇺🇸';
-            text.textContent = 'EN';
+            flag.textContent = 'ENG ➤';
+            text.textContent = 'SPA';
         }
     });
 }
