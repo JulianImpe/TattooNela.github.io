@@ -57,16 +57,24 @@
 
         <!-- Menú escritorio -->
         <nav id="main-nav-desktop" class="main-nav-desktop">
-            <a class="li_links" href="#about">Sobre mí</a>
-            <a class="li_links" href="#desings">Diseños</a>
-            <a class="li_links" href="#reseñas">Reseñas</a>
-            <a class="li_links" href="#find-us">Ubicación</a>
+            <a class="li_links nav-obras" href="#obras" data-translate="obras">
+                Obras
+                <span class="nuevo-tag" data-translate="nuevo">NUEVO</span>
+            </a>
+            <a class="li_links" href="#desings" data-translate="diseños">Diseños</a>
+            <a class="li_links" href="#reseñas" data-translate="reseñas">Reseñas</a>
+            <a class="li_links" href="#find-us" data-translate="ubicacion">Ubicación</a></a>
+            <button id="language-toggle-mobile" class="language-btn" aria-label="Cambiar idioma">
+                <span class="lang-flag">🇪🇸</span>
+                <span class="lang-text">ES</span>
+            </button>
             <a href="https://www.instagram.com/tattoonela_/" target="_blank">
                 <i class="fa-brands fa-instagram" id="instagram-logo"></i>
             </a>
             <a href="https://wa.me/5491144278014" target="_blank">
                 <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
             </a>
+
         </nav>
 
         <!-- Menú mobile hamburguesa -->
@@ -74,10 +82,13 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         <nav id="main-nav-mobile" class="main-nav-mobile">
-            <a class="li_links" href="#about">Sobre mí</a>
-            <a class="li_links" href="#desings">Diseños</a>
-            <a class="li_links" href="#reseñas">Reseñas</a>
-            <a class="li_links" href="#find-us">Ubicación</a>
+            <a class="li_links nav-obras" href="#obras">
+                <span data-translate="obras">Obras</span>
+                <span class="nuevo-tag">NUEVO</span>
+            </a>
+            <a class="li_links" href="#desings" data-translate="diseños">Diseños</a>
+            <a class="li_links" href="#reseñas" data-translate="reseñas">Reseñas</a>
+            <a class="li_links" href="#find-us" data-translate="ubicacion">Ubicación</a>
             <a href="https://www.instagram.com/tattoonela_/" target="_blank">
                 <i class="fa-brands fa-instagram" id="instagram-logo"></i>
             </a>
@@ -89,10 +100,10 @@
     <div class="hero">
     </div>
     <div class="texto-hero">
-        <a id="reservarTurno" href="#"> <button> Reservar turno</button></a>
+        <a id="reservarTurno" href="#"> <button data-translate="reservarTurno"> Reservar turno</button></a>
     </div>
     <section id="styles" class="mis-estilos fade-in">
-        <h2 id="mis-estilos-titulo">Mis estilos</h2>
+        <h2 id="mis-estilos-titulo" data-translate="misEstilos">Mis estilos</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -104,8 +115,8 @@
                                 Ver en Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         </div>
-                        <h3>Realismo</h3>
-                        <p>Diseños que retraten a tus seres queridos en la piel.</p>
+                        <h3 data-translate="realismo">Realismo</h3>
+                        <p data-translate="realismoDesc">Diseños que retraten a tus seres queridos en la piel.</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -113,11 +124,12 @@
                         <div class="video-container">
                             <video src="images/Videos/cover.mp4" alt="Cover" autoplay loop muted></video>
                             <a href="https://www.instagram.com/reel/CyEhNVOxSgj/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                class="video-overlay" target="_blank">Ver en Instagram<i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                class="video-overlay" target="_blank"><span data-translate="verEnInstagram">Ver en
+                                    Instagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
-                        <h3>Cover</h3>
-                        <p>Tatuajes que transforman u ocultan trabajos antiguos con nuevo arte.</p>
+                        <h3 data-translate="cover">Cover</h3>
+                        <p data-translate="coverDesc">Tatuajes que transforman u ocultan trabajos antiguos con nuevo
+                            arte.</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -125,11 +137,11 @@
                         <div class="video-container">
                             <video src="images/Videos/Medusa.mp4" alt="Geometrico" autoplay loop muted></video>
                             <a href="https://www.instagram.com/reel/DJnjMaGMFdE/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                class="video-overlay" target="_blank">Ver en Instagram<i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                class="video-overlay" target="_blank"><span data-translate="verEnInstagram">Ver en
+                                    Instagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
-                        <h3>Personalizado</h3>
-                        <p>Un tatuaje diseñado exclusivamente para tu cuerpo.</p>
+                        <h3 data-translate="personalizado">Personalizado</h3>
+                        <p data-translate="personalizadoDesc">Un tatuaje diseñado exclusivamente para tu cuerpo.</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -138,11 +150,12 @@
                             <video src="images/Videos/dragon ball.mp4" alt="Puntillismo de arrastre" autoplay loop
                                 muted></video>
                             <a href="https://www.instagram.com/reel/DJfWxYaJobM/" class="video-overlay" target="_blank"
-                                rel="noopener noreferrer">Ver en Instagram<i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                rel="noopener noreferrer"><span data-translate="verEnInstagram">Ver en
+                                    Instagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
-                        <h3>Puntillismo De Arrastre</h3>
-                        <p>Sombras creadas con puntos que simulan movimiento y profundidad.</p>
+                        <h3 data-translate="puntillismo">Puntillismo De Arrastre</h3>
+                        <p data-translate="puntillismoDesc">Sombras creadas con puntos que simulan movimiento y
+                            profundidad.</p>
                     </div>
                 </div>
             </div>
@@ -151,8 +164,135 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
+
+    <!-- Nueva sección de Obras -->
+    <section id="obras" class="my-obras fade-in">
+
+        <h2 data-translate="misObras">Mis obras</h2>
+        <h4 class="nuevo-tag-fijo" data-translate="nuevaSeccion">Nueva sección</h4>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="obra-1">
+                    <div class="obra-container">
+                        <img src="images/Diseños/señora.jpg" alt="Obra de arte - Señora" loading="lazy">
+                        <div class="obra-info">
+                            <div class="ficha-tecnica">
+                                <h4 data-translate="experiencia">Experiencia</h4>
+                                <p>50 x 70 cm</p>
+                                <p data-translate="latex"> Látex sobre lienzo</p>
+                                <p><span data-translate="año">Año</span> 2018</p>
+                            </div>
+                        </div>
+                        <div class="obra-overlay vendido" data-translate="vendido">VENDIDO</div>
+                    </div>
+
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/tattoonela_/" class="ver-en-instagram" target="_blank"
+                            rel="noopener noreferrer" data-translate="verEnInstagram">Ver en instagram</a>
+                    </button>
+                    <div class="auspicios fade-in">
+                        <img src="images/mixer sin fondo.png" alt="mixer">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="obra-container">
+                        <img src="images/Diseños/big oragen chest.jpg" alt="Obra de arte - Señora" loading="lazy">
+                        <div class="obra-info">
+                            <div class="ficha-tecnica">
+                                <h4 data-translate="granPecho">Gran pecho naranja</h4>
+                                <p>270x290 cm </p>
+                                <p data-translate="latex"> Látex sobre lienzo</p>
+                                <p> <span data-translate="año">Año</span> 2017 </p>
+                            </div>
+                        </div>
+                        <div class="obra-overlay disponible" data-translate="disponible">DISPONIBLE</div>
+                    </div>
+
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/reel/DGS2ci-JY6j/" class="ver-en-instagram" target="_blank"
+                            rel="noopener noreferrer" data-translate="verEnInstagram">Ver en instagram</a>
+                    </button>
+                    <div class="auspicios fade-in">
+                        <img src="images/mixer sin fondo.png" alt="mixer">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="obra-container">
+                        <img src="images/Diseños/the 7 crows.jpg" alt="Obra de arte - Señora" loading="lazy">
+                        <div class="obra-info">
+                            <div class="ficha-tecnica">
+                                <h4 data-translate="losCuervos">Los 7 cuervos</h4>
+                                <p>50 x 70 cm</p>
+                                <p data-translate="latex"> Látex sobre lienzo</p>
+                                <p> <span data-translate="año">Año</span> 2025 </p>
+                            </div>
+                        </div>
+                        <div class="obra-overlay disponible" data-translate="disponible">DISPONIBLE</div>
+                    </div>
+
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/tattoonela_/" class="ver-en-instagram" target="_blank"
+                            rel="noopener noreferrer" data-translate="verEnInstagram">Ver en instagram</a>
+                    </button>
+                    <div class="auspicios fade-in">
+                        <img src="images/mixer sin fondo.png" alt="mixer">
+                    </div>
+                </div>
+                <div class="swiper-slide active-slide">
+                    <div class="obra-container">
+                        <img src="images/Diseños/la coronacion.jpg" alt="Obra de arte - La Coronación" loading="lazy">
+                        <div class="obra-info">
+                            <div class="ficha-tecnica">
+                                <h4 data-translate="laCoronacion">La coronación</h4>
+                                <p>50 x 70 cm</p>
+                                <p data-translate="latex"> Látex sobre lienzo</p>
+                                <p> <span data-translate="año">Año</span> 2025 </p>
+                            </div>
+                        </div>
+                        <div class="obra-overlay disponible" data-translate="disponible">DISPONIBLE</div>
+                    </div>
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/reel/DOrMpyhCXGw/" class="ver-en-instagram" target="_blank"
+                            rel="noopener noreferrer" data-translate="verEnInstagram">Ver en instagram</a>
+                    </button>
+                    <div class="auspicios fade-in">
+                        <img src="images/mixer sin fondo.png" alt="mixer">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="obra-container">
+                        <img src="images/Diseños/gatito.jpg" alt="Obra de arte - Gatito" loading="lazy">
+                        <div class="obra-info">
+                            <div class="ficha-tecnica">
+                                <h4 data-translate="fuegoInterno">Fuego interno</h4>
+                                <p>70 x 70 cm</p>
+                                <p data-translate="mural"> Mural</p>
+                                <p> <span data-translate="año">Año</span> 2020</p>
+                            </div>
+                        </div>
+                        <div class="obra-overlay agotado" data-translate="agotado">AGOTADO</div>
+                    </div>
+                    <button type="submit" class="ver-en-instagram">
+                        <a href="https://www.instagram.com/p/DPKHFXiCWm5/" class="ver-en-instagram" target="_blank"
+                            rel="noopener noreferrer" data-translate="verEnInstagram">Ver en instagram</a>
+                    </button>
+                    <div class="auspicios fade-in">
+                        <img src="images/mixer sin fondo.png" alt="mixer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginación y flechas opcionales -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        </div>
+    </section>
+
+
     <section id="desings" class="my-desings fade-in">
-        <h2>Mis diseños</h2>
+        <h2 data-translate="misDiseños">Mis diseños</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -160,35 +300,40 @@
 
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"
+                            data-translate="verEnInstagram">Ver en instagram</a>
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Diseños/brazo flor.jpg" alt="brazo con flor tatuada" loading="lazy">
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noreferrer noopener">Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noreferrer noopener"
+                            data-translate="verEnInstagram">Ver en instagram</a>
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Diseños/ojo-señor.jpg" alt="ojo-señor" loading="lazy">
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"
+                            data-translate="verEnInstagram">Ver en instagram</a>
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Diseños/ojos y espadas.jpg" alt="ojos y espalda" loading="lazy">
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"
+                            data-translate="verEnInstagram">Ver en instagram</a>
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Diseños/espalda.jpg" alt="espalda-completa" loading="lazy">
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"> Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"
+                            data-translate="verEnInstagram"> Ver en instagram</a>
                     </button>
                 </div>
                 <div class="swiper-slide">
@@ -196,7 +341,8 @@
 
                     <button type="submit" class="ver-en-instagram">
                         <a href="https://www.instagram.com/stories/highlights/17994227894576020/"
-                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer">Ver en instagram</a>
+                            class="ver-en-instagram" target="_blank" rel="noopener noreferrer"
+                            data-translate="verEnInstagram">Ver en instagram</a>
                     </button>
                 </div>
             </div>
@@ -209,11 +355,11 @@
 
 
     <section class="frase fade-in">
-        <h3>"Una cicatriz controlada, un proceso natural de sanación" 🌿</h3>
+        <h3 data-translate="frase">"Una cicatriz controlada, un proceso natural de sanación" 🌿</h3>
     </section>
 
     <section id="seccion-youtube" class="fade-in">
-        <h2>Mi canal de Youtube</h2>
+        <h2 data-translate="miCanal">Mi canal de Youtube</h2>
         <div class="video-youtube">
             <a href="https://www.youtube.com/@tattoonela" class="ver-en-instagram" id="link-youtube" target="_blank"
                 rel="noopener noreferrer">
@@ -228,41 +374,47 @@
 
             <button type="submit" class="ver-en-instagram">
                 <a href="https://www.youtube.com/@tattoonela" class="ver-en-instagram" target="_blank"
-                    rel="noopener noreferrer">Visitar Youtube <i class="fa-brands fa-youtube"
-                        id="logo-yt-button"></i></a>
+                    rel="noopener noreferrer" data-translate="visitarYoutube">Visitar Youtube <i
+                        class="fa-brands fa-youtube" id="logo-yt-button"></i></a>
             </button>
         </div>
     </section>
 
     <section id="about" class="about fade-in">
-        <h2>Un poco sobre mí </h2>
+        <h2 data-translate="sobreMiTitulo">Un poco sobre mí </h2>
         <a href="https://www.instagram.com/tattoonela_/" target="_blank" rel="noopener noreferrer">
             <img src="images/marian ing.jpeg" alt="marian-img" class="about-image">
         </a>
 
-        <h4 class="fade-in"><img src="images/Gif/hola.gif" alt="little-hand-pointer" class="gif-sobre-mi"> Hola, soy
-            Marianela, artista de tatuajes y me encanta ayudar a las
-            personas a <strong style="color: #cc3131;">expresar su individualidad</strong> a través de mis diseños.</h4>
+        <h4 class="fade-in"><img src="images/Gif/hola.gif" alt="little-hand-pointer" class="gif-sobre-mi"> <span
+                data-translate="hola">Hola, soy
+                Marianela, artista de tatuajes y me encanta ayudar a las
+                personas a</span> <strong style="color: #cc3131;" data-translate="expresar">expresar su
+                individualidad</strong> <span data-translate="atraves">a través de mis diseños.</span></h4>
 
-        <h4 class="fade-in"> <img src="images/Gif/amor.gif" alt="little-hand-pointer" class="gif-sobre-mi">Mi
-            <strong style="color: #cc3131;">pasión</strong> por el arte me llevó a convertirme
-            en tatuadora, y cada día me esfuerzo por mejorar mis habilidades y ofrecer lo <strong
-                style="color: #cc3131;">mejor</strong> a mis
-            clientes.
+        <h4 class="fade-in"> <img src="images/Gif/amor.gif" alt="little-hand-pointer" class="gif-sobre-mi"><span
+                data-translate="miPasion">Mi</span>
+            <strong style="color: #cc3131;" data-translate="pasion">pasión</strong> <span data-translate="porElArte">por
+                el arte me llevó a convertirme
+                en tatuadora, y cada día me esfuerzo por mejorar mis habilidades y ofrecer lo</span> <strong
+                style="color: #cc3131;" data-translate="mejor">mejor</strong> <span data-translate="aClientes">a mis
+                clientes.</span>
         </h4>
 
-        <h4 class="fade-in"><img src="images/Gif/objetivo.gif" alt="little-hand-pointer" class="gif-sobre-mi"> Me gusta
-            trabajar con diferentes estilos, desde el puntillismo hasta el realismo, y siempre
-            estoy abierta a
-            <strong style="color: #cc3131;">nuevas ideas</strong> y <strong style="color: #cc3131;">desafíos</strong>.
-            Si estás buscando un tatuaje único y
-            personalizado, no dudes en contactarme.
-        </h4>
+        <h4 class="fade-in"><img src="images/Gif/objetivo.gif" alt="little-hand-pointer" class="gif-sobre-mi"> <span
+                data-translate="meGusta">Me gusta
+                trabajar con diferentes estilos, desde el puntillismo hasta el realismo, y siempre
+                estoy abierta a</span>
+            <strong style="color: #cc3131;" data-translate="nuevasIdeas">nuevas ideas</strong> <span
+                data-translate="yDesafios">y</span> <strong style="color: #cc3131;"
+                data-translate="desafios">desafíos</strong><span data-translate="siEstas">. Si estás buscando un tatuaje
+                único y
+                personalizado, no dudes en contactarme.</span>
         </h4>
     </section>
     <section id="find-us" class="fade-in">
         <div class="fade-left">
-            <h2 class="centered-title">Mi local</h2>
+            <h2 class="centered-title" data-translate="miLocal">Mi local</h2>
             <div class="map-fade-in">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.406685880873!2d-58.572125500000006!3d-34.669684000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc70c4fd81af1%3A0xf117cdd0a81109e!2sTattoonela%20Studio!5e0!3m2!1ses-419!2sar!4v1748142680069!5m2!1ses-419!2sar"
@@ -273,7 +425,7 @@
     </section>
     <!-- Carrusel solo para mobile -->
     <section id="reseñas" class="fade-in">
-        <h2>Reseñas</h2>
+        <h2 data-translate="reseñas">Reseñas</h2>
         <div class="reseñas-swiper">
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -303,45 +455,52 @@
     </section>
 
     <section id="contact" class="contact fade-in">
-        <h2>Tatuate conmigo ✨</h2>
-        <p>Contactame hacé tu reserva 🙌🏻</p>
+        <h2 data-translate="tatuateConmigo">Tatuate conmigo ✨</h2>
+        <p data-translate="contactame">Contactame hacé tu reserva 🙌🏻</p>
 
         <!-- Instagram -->
         <a class="btn-contacto-ig" href="instagram://user?username=tattoonela_"
             onclick="setTimeout(()=>{ window.location='https://www.instagram.com/tattoonela_'; }, 100);"
             rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i> Instagram
+            <i class="fab fa-instagram"></i> <span data-translate="instagram">Instagram</span>
         </a>
 
         <!-- WhatsApp -->
         <a class="btn-contacto-wpp" href="whatsapp://send?phone=5491144278014"
             onclick="setTimeout(()=>{ window.location='https://wa.me/5491144278014'; }, 100);"
             rel="noopener noreferrer">
-            <i class="fa-brands fa-whatsapp"></i> Whatsapp
+            <i class="fa-brands fa-whatsapp"></i> <span data-translate="whatsapp">Whatsapp</span>
         </a>
 
         <!-- Gmail -->
         <a class="btn-contacto-gmail" href="mailto:tattoonela@gmail.com"
             onclick="setTimeout(()=>{ window.location='mailto:tattoonela@gmail.com'; }, 100);"
             rel="noopener noreferrer">
-            <i class="fa-solid fa-envelope"></i> Mail
+            <i class="fa-solid fa-envelope"></i> <span data-translate="mail">Mail</span>
         </a>
     </section>
 
 
     <section id="cupon">
-        <h2><strong style="color: #A60A0A;">Felicidades</strong>, llegaste al final de la web. Por eso te<strong
-                style="color: #A60A0A;"> regalamos </strong>un cupón de descuento.</h2>
+        <h2><strong style="color: #A60A0A;" data-translate="felicidades">Felicidades</strong><span
+                data-translate="llegaste">, llegaste al final de la web. Por eso te</span><strong
+                style="color: #A60A0A;" data-translate="regalamos"> regalamos </strong><span
+                data-translate="cuponDesc">un cupón de descuento.</span></h2>
         <form id="cupon-form" class="cupon-form" autocomplete="off">
-            <h3>Obtené <strong style="color: #A60A0A;"> 10%</strong> de descuento en tu próximo tatuaje.</h3>
-            <h4>Solo tenes seguirme en instagram, enviar una screen del follow y reclamar el cupón!</h4>
+            <h3><span data-translate="obtene">Obtené</span> <strong style="color: #A60A0A;"> 10%</strong> <span
+                    data-translate="descuento">de descuento en tu próximo tatuaje.</span></h3>
+            <h4 data-translate="soloTenes">Solo tenes seguirme en instagram, enviar una screen del follow y reclamar el
+                cupón!</h4>
             <a class="btn-contacto-ig" href="https://www.instagram.com/tattoonela_/" target="_blank"
                 rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i> Ir a Instagram
+                <i class="fab fa-instagram"></i> <span data-translate="irInstagram">Ir a Instagram</span>
             </a>
-            <input type="text" placeholder="Tu nombre" name="nombre" id="nombre" required maxlength="40">
-            <button type="submit" class="btn-cupon" id="btn-enviar-foto">Ir a Whatsapp y Enviar foto</button>
-            <button type="button" class="btn-cupon" id="btn-reclamar-codigo" style="display:none;">Reclamar
+            <input type="text" data-translate-placeholder="tuNombre" placeholder="Tu nombre" name="nombre" id="nombre"
+                required maxlength="40">
+            <button type="submit" class="btn-cupon" id="btn-enviar-foto" data-translate="irWhatsapp">Ir a Whatsapp y
+                Enviar foto</button>
+            <button type="button" class="btn-cupon" id="btn-reclamar-codigo" style="display:none;"
+                data-translate="reclamarCodigo">Reclamar
                 código</button>
             <div id="codigo-cupon" style="display:none; margin-top:1rem;">
                 <strong>CÓDIGO: TATTOO10</strong>
